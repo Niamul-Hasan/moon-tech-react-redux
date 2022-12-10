@@ -11,9 +11,12 @@ const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   return (
     <div
-      className='shadow-lg rounded-3xl border  p-3 flex flex-col text-indigo-900'
+      className='shadow-lg rounded-3xl border relative  p-3 flex flex-col text-indigo-900'
       key={product._id}
     >
+      {pathname.includes("cart") && <div className="absolute top-2 right-2 rounded-md grid place-items-center h-6 w-6 text-white bg-blue-600 ">
+        <p>{product.quantity}</p>
+      </div>}
       <div className='h-52 w-52 mx-auto'>
         <img src={product.image} alt={product.model} />
       </div>
