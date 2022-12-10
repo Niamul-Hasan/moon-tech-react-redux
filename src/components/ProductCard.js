@@ -24,8 +24,8 @@ const ProductCard = ({ product }) => {
         </ul>
       </div>
       <div className='flex gap-2 mt-5'>
-        <button className='bg-indigo-500 rounded-full py-1 px-2 flex-1 text-white text-bold'
-          onClick={dispatch({ type: ADD_TO_CART, payload: product })}
+        <button className='bg-orange-500 rounded-full py-1 px-2 flex-1 text-black text-bold'
+          onClick={() => dispatch({ type: ADD_TO_CART, payload: product })}
         >
           Add to cart
         </button>

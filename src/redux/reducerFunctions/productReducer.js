@@ -2,6 +2,7 @@ import { ADD_TO_CART } from "../actionTypes/actionTypes";
 
 const initialState = {
     cart: [],
+    test: "test from redux"
 
 };
 
